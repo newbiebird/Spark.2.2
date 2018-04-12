@@ -29,6 +29,8 @@ import org.apache.spark.internal.Logging
 
 /**
  * Contains utilities for working with posix signals.
+  *
+  * 包含处理posix信号的实用程序。
  */
 private[spark] object SignalUtils extends Logging {
 
@@ -130,6 +132,8 @@ private[spark] object SignalUtils extends Logging {
 
     /**
      * Adds an action to be run by this handler.
+      * 添加由该处理程序运行的操作。
+      *
      * @param action An action to be run when a signal is received. Return true if the signal
      *               should be stopped with this handler, false if it should be escalated.
      */

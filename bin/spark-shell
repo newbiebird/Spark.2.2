@@ -47,6 +47,7 @@ export _SPARK_CMD_USAGE="Usage: ./bin/spark-shell [options]"
 SPARK_SUBMIT_OPTS="$SPARK_SUBMIT_OPTS -Dscala.usejavacp=true"
 # 修改为：
 #     SPARK_SUBMIT_OPTS="$SPARK_SUBMIT_OPTS -Dscala.usejavacp=true -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=10207 -Dcom.sun.management.jmxremote.authenticate=false  -Dcom.sun.management.jmxremote.ssl=false"
+# 参考博客：https://blog.csdn.net/qq_21383435/article/details/79758796
 
 function main() {
   if $cygwin; then
